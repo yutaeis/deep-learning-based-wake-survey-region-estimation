@@ -3,6 +3,7 @@ import numpy as np
 import pylab as plt
 
 import chainer
+import chainer.functions as F
 from chainer import serializers
 
 import input 
