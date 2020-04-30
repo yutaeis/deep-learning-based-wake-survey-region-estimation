@@ -7,6 +7,7 @@ from chainer import serializers
 
 import input 
 import module
+import models
 
 #-------------------------------------------
 # make dataset
@@ -45,7 +46,7 @@ test = np.array(test)
 # model
 #-------------------------------------------
 
-model = module.Model()
+model = models.Model()
 
 optimizer = chainer.optimizers.Adam(alpha=input.lr)
 optimizer.setup(model)
